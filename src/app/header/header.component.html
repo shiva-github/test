@@ -1,0 +1,41 @@
+<header>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-12">
+				<button class="menuBtn btn float-right" (click)="toggleHeader()" [ngClass]="{'toggleHeaderMenuIcon': toggleClassHeader}" ><span class="horizontal-lines"></span><span class="cross-close"></span></button>
+			</div>
+		</div>
+		<div class="menu" *ngIf="toggleClassHeader" [@myAwesomeAnimation]='state'>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-12">
+						<button class="menuBtn btn float-right" (click)="toggleHeader()" [ngClass]="{'toggleHeaderMenuIcon': toggleClassHeader}" ><span class="horizontal-lines"></span><span class="cross-close"></span></button>
+					</div>
+					<div class="col-sm-12">
+						<nav class="navigation-custom">
+							<div class="col-sm-12 linkDiv">
+							<a (click)="toggleHeader()" routerLink="/" ><span class="float-left"> &#9733; </span><span>Home</span><span class="float-right"> &#9733;</span></a>
+							</div>
+							<div class="col-sm-12 linkDiv">
+								<a (click)="toggleHeader()" routerLink="/portfolio"><span class="float-left"> &#9733; </span><span>portfolio</span><span class="float-right"> &#9733;</span></a>
+							</div>
+							<div class="col-sm-12 linkDiv">
+								<a (click)="toggleHeader()" routerLink="/contact"><span class="float-left"> &#9733; </span><span>contact</span><span class="float-right"> &#9733;</span></a>
+							</div>
+						</nav>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+	 <p class="test" (click)='animateMe()'>I will animate</p>
+</header>
+<!-- 
+<h1 class="type-container">
+  <a href="" class="typewrite" data-period="3000" data-type='[ "Hi, I am Shiva.", "A Designer." , "A Developer." ]'>
+    <span class="wrap"></span>
+  </a><span class="cursor-blinker"></span>
+</h1>
+
+
+ -->

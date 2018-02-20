@@ -1,0 +1,164 @@
+
+/*.menuBtn span {
+	height: 20px;
+	width: 20px;
+	display: inline-block;
+}
+*/
+header {
+	.test {
+		width:200px;
+		background:lightgray;
+		margin: 100px auto;
+		text-align:center;
+		padding:20px;
+		font-size:1.5em;	
+	}
+	.menuBtn{
+		border-radius: 100%;
+		display: inline-block;
+		padding: 9px 16px 2px 15px;
+		margin-top: 30px;
+		margin-right: 30px;
+		background-color: #FFF;
+		border: 1px solid #f7f7f7;
+		box-shadow: 1px 1px 5px 0px #888;
+
+		.horizontal-lines {
+			display: inline-block;
+			&:after, &:before {
+				clear: both;
+				content: "";
+				display: table;
+			}
+			&:before {
+				content: "\2630";
+			}
+		}
+		.cross-close {
+			display: none;
+			&:after, &:before {
+				clear: both;
+				content: "";
+				display: table;
+			}
+			&:before {
+				content: "\274C";
+			}
+		}
+	}
+	.toggleHeaderMenuIcon {
+		.horizontal-lines {
+			display: none;
+		}
+		.cross-close {
+			display: inline-block;
+		}
+	}
+	.menu {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 1;
+		background-color: rgba(0,0,0,0.8);
+	}
+	.navigation-custom {
+		max-width: 500px;
+		text-align: center;
+		margin: auto;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		max-height: 230px;
+		.linkDiv {
+			padding: 15px 5px;
+			a{
+				color: #fff;
+				font-size: 30px;
+				text-transform: capitalize;
+				cursor: pointer;
+				display: table;
+				width: 100%;
+				transition: color 0.5s,background-color 0.5s, box-shadow 0.5s;
+				text-decoration: none;
+				padding-left: 15px;
+				padding-right: 15px;
+				border-radius: 30px;
+				box-shadow: 0px 0px 21px 2px #fff;
+				&:hover {
+					box-shadow: 1px 1px 1px 1px #999;
+					color: #333;
+					background-color: #fff;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.type-container {
+	text-align: center;
+	padding-top:10em;
+	background-color: #333;
+	.typewrite {
+		color: #fff;
+	}
+}
+
+.typewrite + .cursor-blinker {
+	border-right: 0.08em solid; 
+	animation: blink-caret .75s step-end infinite;
+}
+@keyframes blink-caret {
+	from, to { border-color: transparent }
+	50% { border-color: orange; }
+}

@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700,700i');
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+	position: relative;
+	margin: 0;
+	padding-bottom: 6rem;
+	min-height: 100%;
+	background-image: url(/assets/images/367873.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+}
